@@ -2,8 +2,10 @@
   "name": "lyric-search",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://senikfarsyan.github.io/react_lyric_search/",
   "dependencies": {
     "axios": "^0.18.0",
+    "gh-pages": "^2.0.1",
     "moment": "^2.22.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
@@ -15,6 +17,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

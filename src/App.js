@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/layout/Navbar';
 import Index from './components/layout/Index';
@@ -12,19 +12,18 @@ class App extends Component {
   render() {
     return (
       <Provider>
-         <Router>
-           <React.Fragment>
-            <Navbar/>
+        <Router>
+          <React.Fragment>
+            <Navbar />
             <div className="container">
               <Switch>
-                <Route exact path="/" component={ Index }/>
-                <Route  path="/lyrics/track/:id" component={ Lyrics }/>
+                <Route exact path="/" component={Index} />
+                <Route path="/lyrics/track/:id" component={Lyrics} />
               </Switch>
             </div>
-        </React.Fragment>
-       </Router>
+          </React.Fragment>
+        </Router>
       </Provider>
-     
     );
   }
 }
